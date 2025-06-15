@@ -53,7 +53,7 @@ def get_girl_response(user_msg, persona):
 Respond to: "{user_msg}"
 Keep it casual and under 50 words."""
     res = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": prompt}
         ],
@@ -73,7 +73,7 @@ Give a short tip for improvement.
 Message: "{user_msg}"
 """
     res = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": prompt}
         ],
